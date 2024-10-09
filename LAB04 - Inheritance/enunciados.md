@@ -14,7 +14,7 @@ Faça um programa principal que cria um candidato a prefeito e um a vereador, e 
 O conceito de herança (inheritance) em POO é muito utilizado para reaproveitamento de código.
 
 - Identifique no exercício anterior quais atributos em comum possuem os dois tipos de candidatos e crie uma classe chamada Candidato, transformando os atributos *private* para *protected*. Lembre de incluir na classe o método toString()
-- Modifique as classes de Prefeito/Vereador, eliminando todos os atributos e métodos reduntantes de Candidato. Obtenha os valores desses atributos por herança utilizando a palavra chave *extends*, isto é: "public class CandidatoVereador extends Candidato {".
+- Modifique as classes de Prefeito/Vereador, eliminando todos os atributos e métodos reduntantes de Candidato. Obtenha os valores desses atributos por herança utilizando a palavra chave *extends*, isto é: "public class CandidatoVereador extends Candidato ".
 - Note que a herança irá trazer os atributos e os métodos para as classes de Prefeito/Vereador.
 - Note que o método toString() deve continuar nas classes de Prefeito/Vereador, pois ele é diferente do método toString() da classe Candidato
 - O construtor deve ser modificado, de forma a inicializar somente os atributos das classes de Prefeito/Vereador. Os atributos que são originais de classe Candidato (chamada de superclasse ou classe mãe/pai) deverão ser inicializados por meio da chamada do construtor original de Figurinha. Isso é feito usando a palavra reservada *super*
@@ -36,7 +36,7 @@ Teste de chamada de herança
 - A classe C1 é base da Classe C2, que por sua vez é base da Classe C3
 - Para cada classe, inclua um atributo público, protegido e privado (pode ser de qualquer tipo)
 - Para cada classe, construa um construtor padrão sem parâmetros e um construtor com parâmetros
-- Nos construtores de cada classe, inclua um comando que imprime uma mensagem indicando a passagem pelo contrutor. Por exemplo, para C1:
+- Nos construtores de cada classe, inclua um comando que imprime uma mensagem ind icando a passagem pelo contrutor. Por exemplo, para C1:
   "Classe C1: chamada do construtor padrao, sem parametros"
   "Classe C3: chamada do construtor com parametros"
 - Na classe C3 inclua um construtor que use o "super" para chamar o construtor da classe C2 com parâmetro
