@@ -46,8 +46,17 @@ public class Universidade {
         this.alunos = vetaux;
     }
 
-    public Estudante copiaAlunosPos(){
+    public Estudante[] copiaAlunosPos(){
         Estudante vetaux[] = new Estudante[this.alunos.length];
+        int i = 0;
+        for(Estudante aux: alunos){
+            if(aux instanceof EstudantePosGrad){
+                vetaux[i]= aux;
+                i++;
+            }
+        }
+
+        return vetaux;
 
     }
 

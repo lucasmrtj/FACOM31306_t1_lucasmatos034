@@ -14,6 +14,18 @@ public class Estudante {
                 '}');
     }
 
+    public void print(boolean veri) {
+        if(veri){
+            System.out.println("Estudante\n" +
+            "nome: " + nome + '\n' +
+            "endereco: " + endereco);
+        }
+        else{
+            System.out.println("Estudante; " +
+            nome +"; " + endereco);  
+        }
+    }
+
     public String getNome() {
         return nome;
     }

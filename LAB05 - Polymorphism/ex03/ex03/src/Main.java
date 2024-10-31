@@ -36,38 +36,24 @@ public class Main {
         univer.printAlunos();
 
         
-        /*
-         * 
-         Estudante e = new Estudante("Carlos","Rua 1o de Abril");
-         Estudante e2 = new Estudante("Carlos","Rua 1o de Abril");
-         Estudante eg2 = new EstudanteGraduacao("Maria", "Rua Maio", "Java is funny");
-         Estudante ep2 = new EstudantePosGrad("Ailton","Rua 31 de fevereiro","Engenharia",
-         "Banco de Dados");
-         Estudante epm2 = new EstudanteMestrado("Carla","Rua Primavera","Medicina",
-         "Vacinas de RNA", "Anticorpos","academico");
-         Estudante epd2 = new EstudanteDoutorado("Bruno","Rua Inverno",
-         "Tecnologia","Processamento de Imagens","Carros Inteligentes");
-         
-         
-         
-         eg2.print();
-         System.out.println( ((EstudanteGraduacao) eg2).getTituloTCC());
-         System.out.println( ((EstudanteGraduacao) e2).getTituloTCC());
-         Estudante[] ev = new Estudante[4];
-         ev[0] = eg;
-         ev[1] = epd2;
-         ev[2] = epm2;
-         ev[3] = e;
-         for (Estudante i : ev){
-                i.print();
-                
-                if (i instanceof EstudanteGraduacao){
-                        System.out.println("\n");
-                        ((EstudanteGraduacao) i).getTituloTCC();
-                }
+        Estudante [] vetposgrad = univer.copiaAlunosPos();
+        System.out.println("======================== copia alunos pos===================");
+        for(Estudante aux: vetposgrad){
+            if(aux != null){
+                aux.print();
+            }
         }
-        */
-        
+        /*
+         *Nao e possivel utilizar o metodo em um vetor de Estudantes pois o metodo nao foi definido na superclasse Estudante, logo o polimorfismo nao é aplicavel
+        */ 
 
+         System.out.println("======================== printf bool ===================");
+         for(Estudante aux: vetposgrad){
+            if(aux!=null)
+            aux.print(false);
+        }
+
+        /*Agora é possivel compilar o codigo entretanto, a classe Estudante de Pós-gradução ainda esta imprimindo no padrao antigo.*/
+        
     }
 }

@@ -15,6 +15,18 @@ public class EstudanteDoutorado extends EstudantePosGrad {
                 '}');
 
     }
+    public void print(boolean veri) {
+        super.print();
+        if(veri){
+            System.out.println("\nEstudanteDoutorado\n" +
+            "tituloTese: " + tituloTese + '\n');
+        }
+        else{
+            System.out.println("; EstudanteDoutorado; " +
+             tituloTese + ';');
+        }
+
+    }
 
     public String getTituloTese() {
         return tituloTese;

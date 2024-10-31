@@ -12,6 +12,19 @@ public class EstudanteGraduacao extends Estudante {
                 "tituloTCC='" + tituloTCC + '\'' +
                 '}');
     }
+    public void print(boolean veri) {
+        super.print();
+        if(veri){
+            System.out.println("\nEstudanteGraduacao\n" +
+                "tituloTCC: " + tituloTCC );
+        }
+        else{
+            System.out.println("; EstudanteGraduacao; " +
+             tituloTCC + "; ");
+
+        }
+    }
+
 
     public String getTituloTCC() {
         return tituloTCC;
